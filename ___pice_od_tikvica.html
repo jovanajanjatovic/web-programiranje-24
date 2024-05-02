@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Recepti 23/24</title>
+    <style>
+      /* Dodajemo stil za plutanje slike na levo */
+      .right {
+          float: right;
+          margin-left: 20px; /* Dodajemo malo margine sa desne strane da bi se odvojila od teksta */
+      }
+  </style>
+</head>
+
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="container">
+        <h1>PICE OD TIKVICA</h1>
+        <p>
+        <h2>Sastojci:</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              2 velike tikvice (isečene na  kolutove)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              1/2 šolje pasiranog paradajza
+            </label>
+          </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+             <label class="form-check-label" for="flexCheckChecked">
+              1/2 crvenog luka
+            </label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              1/2 crvene paprike
+            </label>
+            </div>
+           <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+          <label class="form-check-label" for="flexCheckChecked">
+            1/2 šolje posnog biljnog sira
+          </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          1 kašika začina po izboru
+         </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          2 kašike paradajz pirea
+         </label>
+        </div>
+        <h2>Postupak pripreme:</h2>
+        <p class="fst-italic">         
+          Na plehu obloženom papirom za pečenje poređajte krugove tikvica.
+Preko tikvica rasporedite pasirani paradajz, crveni luk, crvenu papriku, biljni sir, paradajz pire, biljni začin, so i biber.
+Pecite u prethodno zagrejanoj rerni na 200°C oko 20-25 minuta, dok tikvice ne omekšaju i posni sir ne postane zlatno smeđ.</p>
+
+          <img src="https://www.posnajela.rs/wp-content/uploads/2024/04/posne-pice-od-tikvica-1068x1068.jpg" class="d-block w-100" alt="...">
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>

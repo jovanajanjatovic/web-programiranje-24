@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Recepti 23/24</title>
+    <style>
+      /* Dodajemo stil za plutanje slike na levo */
+      .right {
+          float: right;
+          margin-left: 20px; /* Dodajemo malo margine sa desne strane da bi se odvojila od teksta */
+      }
+  </style>
+</head>
+
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="container">
+        <h1>POHOVANI TOFU</h1>
+        <p>
+        <h2>Sastojci:</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              4 dl vode
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              1 blok tofua
+            </label>
+          </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+             <label class="form-check-label" for="flexCheckChecked">
+              1/2 šolje biljnog mleka
+            </label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              maslinovo ulje za prženje
+            </label>
+            </div>
+           <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+          <label class="form-check-label" for="flexCheckChecked">
+            400 g spanaća
+          </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          1 kašika začina po izboru
+         </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          1 šolja prezli
+         </label>
+        </div>
+        <h2>Postupak pripreme:</h2>
+        <p class="fst-italic">         
+          Iscedite tofu od viška tečnosti i narežite ga na šnite ili kocke, po želji.
+U dubokom tanjiru pomešajte kukuruzno brašno, biljno mlijeko, začine i so dok ne dobijete gustu smesu.
+U drugom tanjiru stavite prezle.
+U tavi zagrejte maslinovo ulje.
+Uvaljajte svaki komad tofua u smesu od brašna i mleka, zatim u prezle, osiguravajući da su dobro obloženi.
+Pržite tofu komade u zagrejanom ulju dok ne postanu zlatno smeđi sa svih strana, oko 2-3 minute po strani.
+Izvadite pohovani tofu iz tave i stavite ga na papirni ubrus da upije višak ulja.</p>
+
+          <img src="https://www.posnajela.rs/wp-content/uploads/2024/04/posni-pohovani-tofu-1068x1068.jpg" class="d-block w-100" alt="...">
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>

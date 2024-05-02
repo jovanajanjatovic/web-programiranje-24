@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Recepti 23/24</title>
+    <style>
+      /* Dodajemo stil za plutanje slike na levo */
+      .right {
+          float: right;
+          margin-left: 20px; /* Dodajemo malo margine sa desne strane da bi se odvojila od teksta */
+      }
+  </style>
+</head>
+
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="container">
+        <h1>PUDING OD JAGODA</h1>
+        <p>
+        <h2>Sastojci:</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              500g jagoda
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              400ml posnog biljnog mleka (sojino, bademovo, kokosovo)
+            </label>
+          </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+             <label class="form-check-label" for="flexCheckChecked">
+              4 kašike agava sirupa ili drugog zaslađivača po želji,
+            </label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              4 kašike gustina
+            </label>
+            </div>
+           <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+          <label class="form-check-label" for="flexCheckChecked">
+           šećer u prahu
+          </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          1 kašika začina po izboru
+         </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          1 kašičica praška za pecivo
+         </label>
+        </div>
+        <h2>Postupak pripreme:</h2>
+        <p class="fst-italic">         
+          Operite jagode i očistite ih.
+          Stavite jagode u blender i izmiksajte ih u glatku smesu.
+          U šerpu stavite biljno mleko i zagrejte ga na srednje jakoj vatri.
+          Dodajte agava sirup u mleko i mešajte dok se sirup ne otopi.
+          U manjoj posudi razmutite gustin sa malo vode, a zatim dodajte smesi od jagoda. Dobro promešajte.
+          Polako sipajte smesu od jagoda u vrelo mleko, neprestano mešajući kako bi se izbegle grudvice.
+          Kuvajte smesu na laganoj vatri dok se ne zgusne, oko 5-7 minuta.
+          Sklonite sa vatre i ostavite da se ohladi.</p>
+
+          <img src="https://www.posnajela.rs/wp-content/uploads/2024/04/posni-puding-od-jagoda-1068x712.webp" class="d-block w-100" alt="...">
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
